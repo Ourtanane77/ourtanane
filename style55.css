@@ -1,0 +1,299 @@
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans', sans-serif;
+}
+h1{
+    font-size: 50px;
+    font-family:'Open Sans', sans-serif;
+    
+}
+p{
+    font-size: 24px;
+    line-height: 50px;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #917752;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+.navbar img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 40px;
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 70px;
+}
+.logo {
+    flex: 1 1 auto;
+    margin-left: 120px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 30px;
+}
+img{
+    width: 20%;
+}
+a{
+    margin: 15px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    color: #000;
+}
+
+.about-container{
+    width: 80%;
+    height: 330px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin: -7% auto 20px auto;
+    position: relative;
+    top: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner-area{
+    position: relative;
+    background-image: url(muscles-2501764.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-area, .port-area, .service-area, .contact-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 755px;
+}
+.text-part{
+    width: 65%;
+    height: 40%;
+}        
+.about-area{
+    background-color: #fefefe;
+}
+.port-area{
+    background-color: #262626;
+    color: #fff;
+}
+.service-area{
+    background-color: #fefefe;
+}
+.contact-area{
+    background-color: #262626;
+    color: #fff;
+}
+
+.container-contact10 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    background-color: #000;
+}
+
+
+input.input10 {
+    height: 62px;
+    padding: 0 35px 0 35px;
+}
+
+.input10 {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 31px;
+    font-family: Ubuntu-Bold;
+    font-size: 18px;
+    color: #8f8fa1;
+    line-height: 1.2;
+}
+textarea.input10 {
+    min-height: 169px;
+    padding: 19px 35px 0 35px;
+}
+
+.wrap-input10 {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 31px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.contacto{
+    width: 450px;
+    background: #e5000000;
+}
+
+.submito{
+    display: flex;
+    justify-content: center;
+}
+.submito button{
+    border-radius: 30px;
+    width: 100px;
+    height: 35px;
+    font-family: Ubuntu-Bold;
+    font-size: 18px;
+    background-color: #917752;
+    color: white;
+}
+
+.slider{
+    position: relative;
+    top: -420px;
+    left: 750px;
+    width: 480px;
+    overflow: hidden;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+}
+
+.images img{
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.images input {
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover{
+    background: #fff;
+}
+
+#img1:checked ~ .im1{
+    margin-left: 0;
+}
+
+#img2:checked ~ .im2{
+    margin-left: -100%;
+}
+
+#img3:checked ~ .im3{
+    margin-left: -200%;
+}
+
+#img4:checked ~ .im4{
+    margin-left: -300%;
+}
+
+#img5:checked ~ .im5{
+    margin-left: -400%;
+}
+
+#img6:checked ~ .im6{
+    margin-left: -500%;
+}
+
+.column{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    margin-left: 35px;
+    transition: 1.2s;
+}
+
+.column:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    border-radius: 20px;
+}
+.column img{
+    cursor: pointer;
+    width: 240px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+.column h3{
+    margin-top: 25px;
+    font-family: serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
